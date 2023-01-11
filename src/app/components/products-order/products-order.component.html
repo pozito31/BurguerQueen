@@ -1,0 +1,66 @@
+<div class="row" id="order">
+  <div class="col-12 products">
+    <!-- Muestro los productos del pedido -->
+    <div
+      class="row"
+      *ngFor="let product of orderService.order.productsOrder; let last = last"
+    >
+      <!-- Imagen del pedido -->
+      <div class="col-lg-3 col-md-12">
+        <img [src]="product.img" class="img-small" />
+      </div>
+
+      <!-- Nombre del producto -->
+      <div class="col-lg-3 col-md-12 tex-center">
+        <span>{{ product.name | translate }}</span>
+        <!-- Extras del producto -->
+        <ul>
+          <li *ngFor="let extra of product.getExtras()">
+            <span class="d-block" *ngIf="extra.selected">
+              {{
+                (extra.name | translate) + ": " + (extra.selected | translate)
+              }}
+            </span>
+            <span class="d-block" *ngIf="!extra.selected">
+              {{ extra.name | translate }}
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Precio del producto -->
+      <div class="col-lg-3 col-md-12 tex-center">
+        <span>{{
+          (product.totalPrice() * product.quantity | number : "1.2-2") + " €"
+        }}</span>
+      </div>
+
+      <!-- Botones para movernos entre los extras -->
+      <div class="col-lg-3 col-md-12 tex-center">
+        <i
+          class="fa fa-minus-circle ml-3 mr-3"
+          (click)="orderService.order.oneLessProduct(product)"
+        ></i>
+        <span>{{ product.quantity }}</span>
+        <i
+          class="fa fa-plus-circle ml-3 mr-3"
+          (click)="orderService.order.oneMoreProduct(product)"
+        ></i>
+      </div>
+
+      <hr class="w-100" *ngIf="!last" />
+    </div>
+  </div>
+</div>
+
+<!-- Total del pedido -->
+<div class="row" id="total">
+  <div class="col-12 text-center price-order">
+    <span class="d-block">{{
+      ("label.total.order" | translate) +
+        ": " +
+        (orderService.order.totalOrder() | number : "1.2-2") +
+        " €"
+    }}</span>
+  </div>
+</div>

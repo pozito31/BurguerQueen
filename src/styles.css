@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file,and also import other style files */
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+@font-face { font-family: 'insanibc'; src: url('assets/font/GreasySpoonNF.ttf') format('truetype'); }
+html,body { height: 100%; overflow: hidden; }
+html body { font-family: 'insanibc'; margin-top: 120px; margin-bottom: 85px; }
+.spinner { position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+/* Estilos para las imagenes */
+.img-small { width: 100px; height: 100px; }
+.img-medium { width: 150px; height: 150px; }
+.img-large { width: 130px; height: 130px; }
+/* Estilos para los modales */
+.my-modal-dialog .modal-dialog { max-width: 95%; }
+.my-modal-dialog .no-elements { font-size: 24px; color: #999; }
+html,body { height: 100%; }
+body { margin: 0; font-family: Roboto,"Helvetica Neue",sans-serif; }

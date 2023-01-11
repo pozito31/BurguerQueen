@@ -1,0 +1,5 @@
+#order .products { font-size: 36px; }
+#order i.fa { cursor: pointer; }
+#order ul li { list-style-type: none; font-size: 22px; }
+#order ul { padding: 0px; }
+#total .price-order { font-size: 52px; }

@@ -1,0 +1,26 @@
+<div class="row" id="products">
+  <div class="col-12">
+    <!-- No hay productos en la categoria -->
+    <div class="row" *ngIf="listProducts.length === 0">
+      <div class="col-12 terxt-center">
+        <span>{{ "label.no.products" | translate }}</span>
+      </div>
+    </div>
+
+    <!-- Mostrar los productos de una categoria -->
+    <div class="row" *ngIf="listProducts.length > 0">
+      <div
+        class="col-md-4 col-sm-6 col-12 product"
+        (click)="selectProduct(product)"
+        [routerLink]="['/product']"
+        routerLinkActive="router-link-active"
+        *ngFor="let product of listProducts"
+      >
+        <img [src]="product.img" class="img-medium" />
+        <span class="d-block">{{ product.name | translate }}</span>
+        <br />
+        <span class="d-block">{{ product.price }} € </span>
+      </div>
+    </div>
+  </div>
+</div>

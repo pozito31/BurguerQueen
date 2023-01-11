@@ -1,0 +1,144 @@
+<div class="row" id="product-page" *ngIf="loadProduct">
+  <div class="col-12">
+    <!-- Nombre del producto -->
+    <div class="row">
+      <div class="col-12 product">
+        <img [src]="product.img" class="img-large" />
+        <span class="d-block">{{ product.name | translate }}</span>
+      </div>
+    </div>
+    <hr />
+
+    <div class="row">
+      <div class="col-12 text-center">
+        <!-- El producto tiene extras -->
+        <ng-container *ngIf="extras">
+          <div class="row no-gutters">
+            <div class="col-12">
+              <h2>{{ extras.label | translate }}</h2>
+            </div>
+          </div>
+
+          <!-- Mostramos los extras -->
+          <div class="row no-gutters">
+            <div
+              class="col-4 extra border"
+              *ngFor="let extra of extras.products"
+            >
+              <img [src]="extra.img" class="img-small" />
+              <span class="d-block">{{ extra.name | translate }}</span>
+              <!-- El extra es de si/no -->
+              <ng-container *ngIf="extra.options.length === 1">
+                <span class="d-block">{{
+                  extra.options[0].active
+                    ? extra.options[0].price + " €"
+                    : "0 €"
+                }}</span>
+                <mat-checkbox
+                  [(ngModel)]="extra.options[0].active"
+                ></mat-checkbox>
+              </ng-container>
+              <!-- El extra es de seleccion multiple -->
+              <ng-container *ngIf="extra.options.length > 1">
+                <span class="d-block">{{
+                  extra.optionSelected.price + " €"
+                }}</span>
+                <div class="block-radio m-auto">
+                  <mat-radio-group
+                    class="row"
+                    [(ngModel)]="extra.optionSelected"
+                  >
+                    <mat-radio-button
+                      class="col-md-4 col-sm-12 pb-4"
+                      *ngFor="let option of extra.options"
+                      [value]="option"
+                    >
+                      {{ option.name | translate }}
+                    </mat-radio-button>
+                  </mat-radio-group>
+                </div>
+              </ng-container>
+            </div>
+          </div>
+        </ng-container>
+
+        <!-- El producto no tiene extras -->
+        <ng-container *ngIf="!extras">
+          <div class="row no-gutters">
+            <div class="col-12">
+              <span class="d-block block-price">{{
+                ("label.price" | translate) + ":" + product.price + " €"
+              }}</span>
+            </div>
+          </div>
+        </ng-container>
+
+        <!-- Botones para movernos entre los extras -->
+        <div class="row no-gutters mt-4 mb-4">
+          <button
+            class="btn btn-block btn-primary rounded-0 mt-0 col-6"
+            *ngIf="hasPrevious()"
+            (click)="previous()"
+          >
+            {{ "label.previous" | translate }}
+          </button>
+          <button
+            class="btn btn-block btn-primary rounded-0 mt-0"
+            [ngClass]="{ 'col-12': !hasPrevious(), 'col-6': hasPrevious() }"
+            *ngIf="hasNext()"
+            (click)="next()"
+          >
+            {{ "label.next" | translate }}
+          </button>
+          <button
+            class="btn btn-block rounded-0 btn-primary mt-0"
+            [ngClass]="{ 'col-12': !extras, 'col-6': extras }"
+            *ngIf="!extras || extraSelected === product.extras.length - 1"
+            (click)="addProductOrder()"
+          >
+            {{ "label.add.product" | translate }}
+          </button>
+        </div>
+
+        <div class="row mt-4 mb-4">
+          <div class="col-12">
+            <button
+              class="btn btn-block btn-primary rounded-0 mt-0"
+              [routerLink]="['/list-categories']"
+            >
+              {{ "label.back" | translate }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal de confirmacion -->
+<ng-template #modal_add_product let-modal>
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title">{{ "label.succes.title" | translate }}</h5>
+      <button
+        type="button"
+        class="close"
+        data-dismiss="modal"
+        aria-label="Close"
+        (click)="modal.dismiss()"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      {{ "label.succes" | translate }}
+    </div>
+  </div>
+</ng-template>
+
+<!-- Spinner -->
+<div class="h-100" *ngIf="!loadProduct">
+  <div class="spinner">
+    <img src="assets/img/spinner.gif" alt="" />
+  </div>
+</div>

@@ -1,0 +1,88 @@
+<div class="row" id="footer">
+  <div class="d-grid gap-2 col-12 mt-4 mb-4">
+    <!-- Boton que abre el modal -->
+    <button
+      type="button"
+      class="btn btn-block btn-primary"
+      (click)="openModalOrder()"
+    >
+      {{ "label.my.order" | translate }}
+      <i class="fa fa-plus-circle"></i>
+    </button>
+  </div>
+</div>
+
+<!-- Modal de pedido -->
+<ng-template #modal_order let-modal>
+  <div class="modal-header">
+    <h5 class="modal-title">{{ "label.pay.order" | translate }}</h5>
+    <button
+      type="button"
+      class="close"
+      data-dismiss="modal"
+      aria-label="Close"
+      (click)="modal.dismiss()"
+    >
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <!-- Sin productos -->
+    <div class="row" *ngIf="orderService.order.numProducts() === 0">
+      <div class="col-12 text-center">
+        <span class="no-elements">{{
+          "label.no.elements.order" | translate
+        }}</span>
+      </div>
+    </div>
+    <!-- Con productos -->
+    <div class="row" *ngIf="orderService.order.numProducts() > 0">
+      <div class="col-12">
+        <app-products-order></app-products-order>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <!-- Creo el pedido -->
+    <button
+      type="button"
+      class="btn btn-outline-dark"
+      (click)="modal.close('yes')"
+      data-dismiss="modal"
+    >
+      {{ "label.do.order" | translate }}
+    </button>
+    <!-- Oculto el modal -->
+    <button
+      type="button"
+      class="btn btn-outline-dark"
+      (click)="modal.close('no')"
+    >
+      {{ "label.cancel" | translate }}
+    </button>
+  </div>
+</ng-template>
+
+<ng-template #modal_num_order let-modal>
+  <div class="modal-header">
+    <h5 class="modal-title">{{ "label.modal.num.order.title" | translate }}</h5>
+    <button
+      type="button"
+      class="close"
+      data-dismiss="modal"
+      aria-label="Close"
+      (click)="modal.dismiss()"
+    >
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    {{
+      ("label.info.num.order.start" | translate) +
+        " " +
+        (orderService.numOrder - 1) +
+        ". " +
+        ("label.info.num.order.end" | translate)
+    }}
+  </div>
+</ng-template>

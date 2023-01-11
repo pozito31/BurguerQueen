@@ -1,0 +1,821 @@
+{
+    "categories": [
+        {
+            "name": "label.menu.grill",
+            "img": "assets/img/products/grill.png",
+            "products": [
+                {
+                    
+                    "name": "label.big.menu.bacon",
+                    "img": "assets/img/products/bacon-burger.png",
+                    "price": 8.6,
+                    "extras": [
+                        {
+                            "label": "label.big.menu.question",
+                            "products": [
+                                {
+                                    "name": "label.big.menu",
+                                    "img": "assets/img/products/big-menu.png",
+                                    "options": [
+                                        {
+                                            "price": 0.5,
+                                            "activate": false        
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "label": "label.extra.bacon.cheese",
+                            "products": [
+                                {
+                                    "name": "label.bacon",
+                                    "img": "assets/img/products/bacon.png",
+                                    "optionSelected":  {
+                                        "name": "label.same",
+                                        "price": 0
+                                    },
+                                    "options": [
+                                        {
+                                            "name": "label.same",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "label.remove",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "label.extra",
+                                            "price": 0.3
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "label.cheese",
+                                    "img": "assets/img/products/cheese.png",
+                                    "optionSelected":  {
+                                        "name": "label.same",
+                                        "price": 0
+                                    },
+                                    "options": [
+                                        {
+                                            "name": "label.same",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "label.remove",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "label.extra",
+                                            "price": 0.2
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "label": "label.custom.order",
+                            "products": [
+                                {
+                                    "name": "label.meat.phopper",
+                                    "img": "assets/img/products/carne_phopher.png",
+                                    "optionSelected":  {
+                                        "name": "label.same",
+                                        "price": 0,
+                                        "include": false
+                                    },
+                                    "options": [
+                                        {
+                                            "name": "label.same",
+                                            "price": 0,
+                                            "include": false
+                                        },
+                                        {
+                                            "name": "label.extra",
+                                            "price": 1,
+                                            "include": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "label.lettuce",
+                                    "img": "assets/img/products/lettuce.png",
+                                    "optionSelected":  {
+                                        "name": "label.same",
+                                        "price": 0,
+                                        "include": false
+                                    },
+                                    "options": [
+                                        {
+                                            "name": "label.same",
+                                            "price": 0,
+                                            "include": false
+                                        },
+                                        {
+                                            "name": "label.remove",
+                                            "price": 0,
+                                            "include": false
+                                        },
+                                        {
+                                            "name": "label.extra",
+                                            "price": 0.2,
+                                            "include": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "label.tomato",
+                                    "img": "assets/img/products/tomato.png",
+                                    "optionSelected":  {
+                                        "name": "label.same",
+                                        "price": 0
+                                    },
+                                    "options": [
+                                        {
+                                            "name": "label.same",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "label.remove",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "label.extra",
+                                            "price": 0.2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "label.crunchy.onion",
+                                    "img": "assets/img/products/onion.png",
+                                    "optionSelected":  {
+                                        "name": "label.same",
+                                        "price": 0,
+                                        "include": false
+                                    },
+                                    "options": [
+                                        {
+                                            "name": "label.same",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "label.remove",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "label.extra",
+                                            "price": 0.1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "label.mayonnaise",
+                                    "img": "assets/img/products/mayonnaise.png",
+                                    "optionSelected":  {
+                                        "name": "label.same",
+                                        "price": 0
+                                    },
+                                    "options": [
+                                        {
+                                            "name": "label.same",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "label.remove",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "label.extra",
+                                            "price": 0.1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "label.barbecue.sauce",
+                                    "img": "assets/img/products/barbecue-sauce.png",
+                                    "optionSelected":  {
+                                        "name": "label.same",
+                                        "price": 0
+                                    },
+                                    "options": [
+                                        {
+                                            "name": "label.same",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "label.remove",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "label.extra",
+                                            "price": 0.1
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "label": "label.choose.complement",
+                            "products": [
+                                {
+                                    "name": "label.big.potato.classic",
+                                    "img": "assets/img/products/potato-classic.png",
+                                    "options": [
+                                        {
+                                            "price": 0.5,
+                                            "activate": false
+                                        }
+                                    ]
+                                    
+                                },
+                                {
+                                    "name": "label.queen.onion.rings",
+                                    "img": "assets/img/products/onion-ring.png",
+                                    "options": [
+                                        {
+                                            "price": 0.8,
+                                            "activate": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "label.salad.individual",
+                                    "img": "assets/img/products/salad.png",
+                                    "options": [
+                                        {
+                                            "price": 0.5,
+                                            "activate": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "label": "label.choose.drink",
+                            "products": [
+                                {
+                                    "name": "label.big.coca.cola.drink",
+                                    "img": "assets/img/products/coca-cola.png",
+                                    "options": [
+                                        {
+                                            "price": 1,
+                                            "activate": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "label.big.fanta.drink",
+                                    "img": "assets/img/products/fanta.png",
+                                    "options": [
+                                        {
+                                            "price": 1,
+                                            "activate": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "label.big.fanta.limon.drink",
+                                    "img": "assets/img/products/fanta-limon.png",
+                                    "options": [
+                                        {
+                                            "price": 1,
+                                            "activate": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "label.queen.big.egg",
+                    "img": "assets/img/products/hamburguer-egg.png",
+                    "price": 8.7,
+                     "extras": [
+                        {
+                            "label": "label.big.menu.question",
+                            "products": [
+                                {
+                                    "name": "label.big.menu",
+                                    "img": "assets/img/products/big-menu.png",
+                                    "options": [
+                                        {
+                                            "price": 0.5,
+                                            "activate": false        
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "label": "label.custom.order",
+                            "products": [
+                                {
+                                    "name": "label.lettuce",
+                                    "img": "assets/img/products/lettuce.png",
+                                    "optionSelected":  {
+                                        "name": "label.same",
+                                        "price": 0,
+                                        "include": false
+                                    },
+                                    "options": [
+                                        {
+                                            "name": "label.same",
+                                            "price": 0,
+                                            "include": false
+                                        },
+                                        {
+                                            "name": "label.remove",
+                                            "price": 0,
+                                            "include": false
+                                        },
+                                        {
+                                            "name": "label.extra",
+                                            "price": 0.2,
+                                            "include": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "label.tomato",
+                                    "img": "assets/img/products/tomato.png",
+                                    "optionSelected":  {
+                                        "name": "label.same",
+                                        "price": 0
+                                    },
+                                    "options": [
+                                        {
+                                            "name": "label.same",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "label.remove",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "label.extra",
+                                            "price": 0.2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "label.mayonnaise",
+                                    "img": "assets/img/products/mayonnaise.png",
+                                    "optionSelected":  {
+                                        "name": "label.same",
+                                        "price": 0
+                                    },
+                                    "options": [
+                                        {
+                                            "name": "label.same",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "label.remove",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "label.extra",
+                                            "price": 0.1
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "label": "label.choose.complement",
+                            "products": [
+                                {
+                                    "name": "label.big.potato.classic",
+                                    "img": "assets/img/products/potato-classic.png",
+                                    "options": [
+                                        {
+                                            "price": 0.5,
+                                            "activate": false
+                                        }
+                                    ]
+                                    
+                                }
+                            ]
+                        },
+                        {
+                            "label": "label.choose.drink",
+                            "products": [
+                                {
+                                    "name": "label.big.coca.cola.drink",
+                                    "img": "assets/img/products/coca-cola.png",
+                                    "options": [
+                                        {
+                                            "price": 1,
+                                            "activate": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "label.big.fanta.drink",
+                                    "img": "assets/img/products/fanta.png",
+                                    "options": [
+                                        {
+                                            "price": 1,
+                                            "activate": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "label.big.fanta.limon.drink",
+                                    "img": "assets/img/products/fanta-limon.png",
+                                    "options": [
+                                        {
+                                            "price": 1,
+                                            "activate": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "label.big.phopper",
+                    "img": "assets/img/products/phopper.png",
+                    "price": 6.99,
+                    "extras": [
+                        {
+                            "label": "label.big.menu.question",
+                            "products": [
+                                {
+                                    "name": "label.big.menu",
+                                    "img": "assets/img/products/big-menu.png",
+                                    "options": [
+                                        {
+                                            "price": 0.5,
+                                            "activate": false        
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "label": "label.extra.bacon.cheese",
+                            "products": [
+                                {
+                                    "name": "label.bacon",
+                                    "img": "assets/img/products/bacon.png",
+                                    "optionSelected":  {
+                                        "name": "label.same",
+                                        "price": 0
+                                    },
+                                    "options": [
+                                        {
+                                            "name": "label.same",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "label.remove",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "label.extra",
+                                            "price": 0.3
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "label.cheese",
+                                    "img": "assets/img/products/cheese.png",
+                                    "optionSelected":  {
+                                        "name": "label.same",
+                                        "price": 0
+                                    },
+                                    "options": [
+                                        {
+                                            "name": "label.same",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "label.remove",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "label.extra",
+                                            "price": 0.2
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "label": "label.custom.order",
+                            "products": [
+                                {
+                                    "name": "label.meat.phopper",
+                                    "img": "assets/img/products/carne_phopher.png",
+                                    "optionSelected":  {
+                                        "name": "label.same",
+                                        "price": 0,
+                                        "include": false
+                                    },
+                                    "options": [
+                                        {
+                                            "name": "label.same",
+                                            "price": 0,
+                                            "include": false
+                                        },
+                                        {
+                                            "name": "label.extra",
+                                            "price": 1,
+                                            "include": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "label.lettuce",
+                                    "img": "assets/img/products/lettuce.png",
+                                    "optionSelected":  {
+                                        "name": "label.same",
+                                        "price": 0,
+                                        "include": false
+                                    },
+                                    "options": [
+                                        {
+                                            "name": "label.same",
+                                            "price": 0,
+                                            "include": false
+                                        },
+                                        {
+                                            "name": "label.remove",
+                                            "price": 0,
+                                            "include": false
+                                        },
+                                        {
+                                            "name": "label.extra",
+                                            "price": 0.2,
+                                            "include": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "label.mayonnaise",
+                                    "img": "assets/img/products/mayonnaise.png",
+                                    "optionSelected":  {
+                                        "name": "label.same",
+                                        "price": 0
+                                    },
+                                    "options": [
+                                        {
+                                            "name": "label.same",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "label.remove",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "label.extra",
+                                            "price": 0.1
+                                        }
+                                    ]
+                                }
+                                
+                            ]
+                        },
+                        {
+                            "label": "label.choose.complement",
+                            "products": [
+                                {
+                                    "name": "label.big.potato.classic",
+                                    "img": "assets/img/products/potato-classic.png",
+                                    "options": [
+                                        {
+                                            "price": 0.5,
+                                            "activate": false
+                                        }
+                                    ]
+                                    
+                                },
+                                {
+                                    "name": "label.queen.onion.rings",
+                                    "img": "assets/img/products/onion-ring.png",
+                                    "options": [
+                                        {
+                                            "price": 0.8,
+                                            "activate": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "label.salad.individual",
+                                    "img": "assets/img/products/salad.png",
+                                    "options": [
+                                        {
+                                            "price": 0.5,
+                                            "activate": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "label": "label.choose.drink",
+                            "products": [
+                                {
+                                    "name": "label.big.coca.cola.drink",
+                                    "img": "assets/img/products/coca-cola.png",
+                                    "options": [
+                                        {
+                                            "price": 1,
+                                            "activate": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "label.big.fanta.drink",
+                                    "img": "assets/img/products/fanta.png",
+                                    "options": [
+                                        {
+                                            "price": 1,
+                                            "activate": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "label.big.fanta.limon.drink",
+                                    "img": "assets/img/products/fanta-limon.png",
+                                    "options": [
+                                        {
+                                            "price": 1,
+                                            "activate": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "label.doritos.burguer",
+                    "img": "assets/img/products/burguer-steak.png",
+                    "price": 8.2,
+                    "extras": [
+                        {
+                            "label": "label.big.menu.question",
+                            "products": [
+                                {
+                                    "name": "label.big.menu",
+                                    "img": "assets/img/products/big-menu.png",
+                                    "options": [
+                                        {
+                                            "price": 0.5,
+                                            "activate": false        
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "label": "label.choose.complement",
+                            "products": [
+                                {
+                                    "name": "label.big.potato.classic",
+                                    "img": "assets/img/products/potato-classic.png",
+                                    "options": [
+                                        {
+                                            "price": 0.5,
+                                            "activate": false
+                                        }
+                                    ]
+                                    
+                                },
+                                {
+                                    "name": "label.queen.onion.rings",
+                                    "img": "assets/img/products/onion-ring.png",
+                                    "options": [
+                                        {
+                                            "price": 0.8,
+                                            "activate": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "label.salad.individual",
+                                    "img": "assets/img/products/salad.png",
+                                    "options": [
+                                        {
+                                            "price": 0.5,
+                                            "activate": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "label": "label.choose.drink",
+                            "products": [
+                                {
+                                    "name": "label.big.coca.cola.drink",
+                                    "img": "assets/img/products/coca-cola.png",
+                                    "options": [
+                                        {
+                                            "price": 1,
+                                            "activate": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "label.big.fanta.drink",
+                                    "img": "assets/img/products/fanta.png",
+                                    "options": [
+                                        {
+                                            "price": 1,
+                                            "activate": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "label.big.fanta.limon.drink",
+                                    "img": "assets/img/products/fanta-limon.png",
+                                    "options": [
+                                        {
+                                            "price": 1,
+                                            "activate": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "label.salad.more",
+            "img": "assets/img/products/salad.png",
+            "products": [
+                {
+                    "name": "label.salad.individual",
+                    "img": "assets/img/products/salad.png",
+                    "price": 1.5
+                }
+            ]
+        },
+        {
+            "name": "label.desserts",
+            "img": "assets/img/products/postres.png",
+            "products": [
+                {
+                    "name": "label.dessert.kitkat",
+                    "img": "assets/img/products/kitkat.png",
+                    "price": 1.5
+                },
+                {
+                    "name": "label.dessert.oreo",
+                    "img": "assets/img/products/oreo.png",
+                    "price": 1.5
+                }
+            ]
+        },
+        {
+            "name": "label.complements",
+            "img": "assets/img/products/onion-ring.png",
+            "products": [
+                {
+                    "name": "label.big.potato.classic",
+                    "img": "assets/img/products/potato-classic.png",
+                    "price": 1.5
+                },
+                {
+                    "name": "label.queen.onion.rings",
+                    "img": "assets/img/products/onion-ring.png",
+                    "price": 2
+                }
+            ]
+        },
+        {
+            "name": "label.drink.coffe",
+            "img": "assets/img/products/cafe.png",
+            "products": [
+                {
+                    "name": "label.coffe",
+                    "img": "assets/img/products/cafe.png",
+                    "price": 0.5
+                },
+                {
+                    "name": "label.big.coca.cola.drink",
+                    "img": "assets/img/products/coca-cola.png",
+                    "price": 1.5
+                },
+                {
+                    "name": "label.big.fanta.drink",
+                    "img": "assets/img/products/fanta.png",
+                    "price": 1.5
+                },
+                {
+                    "name": "label.big.fanta.limon.drink",
+                    "img": "assets/img/products/fanta-limon.png",
+                    "price": 1.5
+                }
+            ]
+        }
+    ]
+}

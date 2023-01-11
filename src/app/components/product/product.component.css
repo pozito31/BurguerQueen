@@ -1,0 +1,16 @@
+#product-page .product { text-align: center; font-size: 36px; }
+#product-page .extra { font-size: 22px; }
+#product-page .block-price { font-size: 36px; }
+#product-page::ng-deep .mat-checkbox-frame,#product-page::ng-deep .mat-checkbox-background { border-radius: 50%; }
+#product-page::ng-deep .mat-checkbox-background svg { display: none; }
+#product-page::ng-deep .mat-checkbox-inner-container,#product-page::ng-deep .mat-radio-container,#product-page::ng-deep .mat-radio-outer-circle,#product-page::ng-deep .mat-radio-inner-circle { width: 60px; height: 60px; }
+#product-page::ng-deep .mat-checkbox-background { margin: 5px; }
+#product-page::ng-deep .mat-radio-checked .mat-radio-inner-circle { transform: scale(0.8) }
+#product-page::ng-deep .block-radio { position: relative; padding-top: 30px; }
+#product-page::ng-deep .mat-radio-label-content { position: absolute; top: -30px; }
+@media (min-width:768px) {
+  #product-page::ng-deep .block-radio { width: 75%; }
+}
+@media (max-width:768px) {
+  #product-page::ng-deep .block-radio { width: 50%; }
+}
