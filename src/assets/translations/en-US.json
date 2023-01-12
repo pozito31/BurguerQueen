@@ -54,5 +54,6 @@
     "label.total.order": "Order total",
     "label.modal.num.order.title": "Order info",
     "label.info.num.order.start": "¡thanks for your order! Your num order is: ",
-    "label.info.num.order.end": "Wait your order, please. "
+    "label.info.num.order.end": "Wait your order, please. ",
+    "label.choose.payment.title": "Choose type payment"
 }

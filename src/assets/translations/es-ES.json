@@ -54,5 +54,6 @@
     "label.total.order": "Total pedido",
     "label.modal.num.order.title": "Información pedido",
     "label.info.num.order.start": "¡Gracias por su pedido! Su numero de pedido es: ",
-    "label.info.num.order.end": "Vaya al mostrador y espere su pedido. "
+    "label.info.num.order.end": "Vaya al mostrador y espere su pedido. ",
+    "label.choose.payment.title": "Elige el tipo de pago"
 }

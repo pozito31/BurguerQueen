@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NgxPayPalModule } from 'ngx-paypal';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
@@ -46,7 +47,8 @@ export function productFactory(provider: ProductService) {
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MatCheckboxModule,
-    MatRadioModule
+    MatRadioModule,
+    NgxPayPalModule
   ],
   providers: [
     TranslateService,

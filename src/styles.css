@@ -14,3 +14,6 @@ html body { font-family: 'insanibc'; margin-top: 120px; margin-bottom: 85px; }
 .my-modal-dialog .no-elements { font-size: 24px; color: #999; }
 html,body { height: 100%; }
 body { margin: 0; font-family: Roboto,"Helvetica Neue",sans-serif; }
+.my-modal-dialog .type-payment { display: inline-block; border: 1px solid #000; padding: 55px; border-radius: 4px; margin-right: 5px; cursor: pointer; }
+.my-modal-dialog .type-payment i { font-size: 80px; }
+.my-modal-dialog .type-payment p { margin: 0; margin-top: 15px; font-size: 24px; }
